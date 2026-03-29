@@ -1,22 +1,48 @@
-// swift-tools-version:5.5
-import PackageDescription
+      // swift-tools-version:5.5
+      import PackageDescription
 
-let package = Package(
+      let package = Package(
+          name: "VIDVeKYC",
+          platforms: [
+              .iOS(.v15)
+          ],
+          products: [
+              .library(
+                  name: "VIDVeKYC",
+                  targets: ["VIDVeKYC", "RSSigningSDK", "VIDVeKYCDependencies", "SecurePDF", "VIDVLivenessTarget"]
+              )
+          ],
+          dependencies: [
+              .package(url: "https://github.com/Valify-Solutions/VIDVDocKit-SPM.git", from: "1.5.0")
+          ],
+          targets: [
+              .target(
+                  name: "VIDVeKYCDependencies",
+                  dependencies: [
+                      .product(name: "VIDVDocKit", package: "VIDVDocKit-SPM")
+                  ],
+                  path: "Sources/VIDVeKYCDependencies"
+              )
+,
+.binaryTarget(
     name: "VIDVeKYC",
-    platforms: [
-        .iOS(.v15)
-    ],
-    products: [
-        .library(
-            name: "VIDVeKYC",
-            targets: ["VIDVeKYC"]
-        )
-    ],
-    targets: [
-        .binaryTarget(
-            name: "VIDVeKYC",
-            url: "https://github.com/Valify-Solutions/VIDVeKYC-SPM/releases/download/3.0.1/VIDVeKYC.3.0.1.xcframework.zip",
-            checksum: "1ad643d5fb1751b2bcc81c05276ae5d7b8bd77090865f038d3944a3eb4feb07f"
-        )
-    ]
+    url: "https://valify-public-sdks.s3.eu-central-1.amazonaws.com/VIDVeKYC/3.0.2/VIDVeKYC.spm.xcframework.zip",
+    checksum: "f5d7408a7fbe2c994d8ad0a6f18871b460ed06d7f8b489193f7ff4d8653c8d4e"
+),
+.binaryTarget(
+    name: "RSSigningSDK",
+    url: "https://valify-public-sdks.s3.eu-central-1.amazonaws.com/VIDVeKYC/3.0.2/RSSigningSDK.xcframework.zip",
+    checksum: "e68f9f15a7fefe9d9828373c287cf366e557da5e33aa5046a8f3808008c179c1"
+),
+.binaryTarget(
+    name: "SecurePDF",
+    url: "https://valify-public-sdks.s3.eu-central-1.amazonaws.com/VIDVeKYC/3.0.2/SecurePDF.xcframework.zip",
+    checksum: "ea8ede77d3641caedca2a387451365ad1360fb66c4d1748693c4cd3f3f760311"
+),
+.binaryTarget(
+    name: "VIDVLivenessTarget",
+    url: "https://valify-public-sdks.s3.eu-central-1.amazonaws.com/VIDVeKYC/3.0.2/VIDVLiveness.xcframework.zip",
+    checksum: "d19870533b9271435cd3273b05f016ece70ffba1cf6849d043564a5210963a7a"
 )
+          ]
+      )
