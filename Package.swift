@@ -26,23 +26,23 @@
 ,
 .binaryTarget(
     name: "VIDVeKYC",
-    url: "https://raw.githubusercontent.com/Valify-Solutions/VIDVeKYC-SPM/3.0.3/Artifacts/VIDVeKYC.spm.xcframework.zip",
-    checksum: "f5d7408a7fbe2c994d8ad0a6f18871b460ed06d7f8b489193f7ff4d8653c8d4e"
+    url: "https://raw.githubusercontent.com/Valify-Solutions/VIDVeKYC-SPM/3.0.5/Artifacts/VIDVeKYC.spm.xcframework.zip",
+    checksum: "c9df3a423043525836823510614c10fccbecc0137cef99a9751d5b67a493e5cf"
 ),
 .binaryTarget(
     name: "RSSigningSDK",
-    url: "https://raw.githubusercontent.com/Valify-Solutions/VIDVeKYC-SPM/3.0.3/Artifacts/RSSigningSDK.xcframework.zip",
+    url: "https://raw.githubusercontent.com/Valify-Solutions/VIDVeKYC-SPM/3.0.5/Artifacts/RSSigningSDK.xcframework.zip",
     checksum: "e68f9f15a7fefe9d9828373c287cf366e557da5e33aa5046a8f3808008c179c1"
 ),
 .binaryTarget(
     name: "SecurePDF",
-    url: "https://raw.githubusercontent.com/Valify-Solutions/VIDVeKYC-SPM/3.0.3/Artifacts/SecurePDF.xcframework.zip",
-    checksum: "ea8ede77d3641caedca2a387451365ad1360fb66c4d1748693c4cd3f3f760311"
+    url: "https://raw.githubusercontent.com/Valify-Solutions/VIDVeKYC-SPM/3.0.5/Artifacts/SecurePDF.xcframework.zip",
+    checksum: "26bb26a68f77fae7b5b29ae85f18a3fd18fd8e8a3b3a7798ba9eee83f692920e"
 ),
 .binaryTarget(
     name: "VIDVLivenessTarget",
-    url: "https://raw.githubusercontent.com/Valify-Solutions/VIDVeKYC-SPM/3.0.3/Artifacts/VIDVLiveness.xcframework.zip",
-    checksum: "d19870533b9271435cd3273b05f016ece70ffba1cf6849d043564a5210963a7a"
+    url: "https://raw.githubusercontent.com/Valify-Solutions/VIDVeKYC-SPM/3.0.5/Artifacts/VIDVLiveness.xcframework.zip",
+    checksum: "b066067b245bc4ad4e7d5feb104d632cc26445ee53582c06dc49f31d2830bfb8"
 )
           ]
       )
